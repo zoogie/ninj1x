@@ -21,7 +21,7 @@ function spray4(iter) {
 }
 spray4(9000);	
 
-var s=2*0x100000;
+var s=8*0x100000;
 var obj2= new ArrayBuffer(s); 
 var payload2=  new Uint32Array(obj2);
 for(var i=0; i<s/4; i++) payload2[i]=i;
