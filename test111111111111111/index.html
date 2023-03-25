@@ -4,7 +4,8 @@
 var a;
 function go(){
 	
-	alert(a.accept);
+	alert(a.value);
+	document.getElementById("pp").src=a.value;
 }
 function init(){
 	a=document.getElementById("ff");
@@ -17,6 +18,7 @@ function init(){
 
 <body onload="init()">
 	<input id="ff" type="file"/>
+	<img id="pp" src=""/>
 	
 </body>
 </html>
