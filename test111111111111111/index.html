@@ -1,5 +1,22 @@
 <!DOCTYPE html>
-<body>
-	<br><a href="sk3.html" style="font-size:100px;">GO GO!<a/><br>
-	<img src="data.bmp"/>
+<!DOCTYPE html>
+<script>
+var a;
+function go(){
+	
+	alert(a.value);
+}
+function init(){
+	a=document.getElementById("ff");
+	a.addEventListener("change", go, false);
+}
+
+
+//<img src="data.bmp"/>
+</script>
+
+<body onload="init()">
+	<input id="ff" type="file"/>
+	
 </body>
+</html>
