@@ -20,11 +20,11 @@
 
 
 
-
+alert("exploit failed. reboot and try again")
          var styleSheet = document.getElementById('style1').sheet;
          var mediaRule = styleSheet.cssRules[0];
 
- alert("exploit failed. reboot and try again")
+ 
 
          try {
             // fails with syntax error and throws exception, 
@@ -56,7 +56,7 @@
 <body onload="exploit()">
    <div style="width: 250px">
       <p>stylehax by nathan</p>
-      <p>exploit in progress... if you've waited > 30 seconds, reboot and try again!</p>
+      <p>exploit in progress. if you've waited > 30 seconds, reboot and try again!</p>
    </div>
 </body>
 
